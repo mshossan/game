@@ -14,25 +14,26 @@
         var lose=0;
     for(i=1;i<=5;i++)
     {   
-        var gussingNumber=parseInt(prompt("Enter number 1 to 5"));
+        var gussingNumber=parseInt(prompt("Enter number between 1 to 5"));
         var randomNumber=Math.round(Math.random()*5);
        
         if(gussingNumber==randomNumber){
             won++;
-           console.log("win"+randomNumber );
+         
         }
         
         else {
             
             lose++;
-            console.log("lose"+randomNumber );
+          
             
         }
         
     }
     document.write("You are won "+ won +" times </br>");
+    // +"("+randomNumber+") </br>"
     document.write("You are lose "+ lose +" times </br>");
-    document.write("Thanks dear friend");
+    document.write("Thanks dear friend for playing this game");
     </script>
 </body>
 </html>
